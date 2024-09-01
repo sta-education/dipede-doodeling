@@ -7,6 +7,7 @@
   "author": "sirthxalot <sta.contribution@gmail.com>",
   "license": "MIT",
   "private": true,
+  "packageManager": "pnpm@8.0.0",
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.15",
     "@vuepress/plugin-back-to-top": "^2.0.0-rc.42",

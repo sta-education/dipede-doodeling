@@ -26,6 +26,8 @@ jobs:
           version: 8
           # install deps with pnpm
           run_install: true
+          standalone: true
+          dest: ~/setup-pnpm
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
