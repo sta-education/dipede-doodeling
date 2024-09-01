@@ -9,6 +9,7 @@ import feedPlugin from './config/plugins/feed'
 import bttPlugin from './config/plugins/btt'
 import copyrightPlugin from './config/plugins/copyright'
 import zoomPlugin from './config/plugins/medium-zoom'
+import photoSwipePlugin from './config/plugins/photo-swipe'
 
 export default defineUserConfig({
   bundler: viteBundler(),
@@ -33,5 +34,6 @@ export default defineUserConfig({
     bttPlugin,
     copyrightPlugin,
     zoomPlugin,
+    photoSwipePlugin
   ],
 });

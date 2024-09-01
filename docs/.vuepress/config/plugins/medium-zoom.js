@@ -1,3 +1,5 @@
 import mediumZoomPlugin from "@vuepress/plugin-medium-zoom";
 
-export default mediumZoomPlugin({});
+export default mediumZoomPlugin({
+    selector: 'nononono'
+});
