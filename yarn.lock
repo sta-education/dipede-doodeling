@@ -624,13 +624,22 @@
     "@vueuse/core" "^11.0.1"
     vue "^3.4.38"
 
-"@vuepress/plugin-back-to-top@2.0.0-rc.42":
+"@vuepress/plugin-back-to-top@2.0.0-rc.42", "@vuepress/plugin-back-to-top@^2.0.0-rc.42":
   version "2.0.0-rc.42"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-2.0.0-rc.42.tgz#4f5be1b98c93edf05dda1918f6902b10686da053"
   integrity sha512-6X8cr0pTYfZRt23o4oT8EahG2bJa5QmFjxKhozw4VmkmBDbb4Yq1h9wgCdkIMROqb6kYMzhJM7++jRiXWbvI3w==
   dependencies:
     "@vuepress/helper" "2.0.0-rc.42"
     "@vueuse/core" "^11.0.1"
+    vue "^3.4.38"
+
+"@vuepress/plugin-blog@^2.0.0-rc.42":
+  version "2.0.0-rc.42"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-blog/-/plugin-blog-2.0.0-rc.42.tgz#963339fd9200115cd810dacb812865966b6f5cb3"
+  integrity sha512-bc3Nrts2JjMhZzQAnPn65E8IKdItFOzmbI44xg5ja5SNljTATV0GSzdEEKii7ZLl760UA4bXGx5ZN5XSDErb3A==
+  dependencies:
+    "@vuepress/helper" "2.0.0-rc.42"
+    chokidar "^3.6.0"
     vue "^3.4.38"
 
 "@vuepress/plugin-copy-code@2.0.0-rc.42":
@@ -642,12 +651,34 @@
     "@vueuse/core" "^11.0.1"
     vue "^3.4.38"
 
+"@vuepress/plugin-copyright@^2.0.0-rc.42":
+  version "2.0.0-rc.42"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-copyright/-/plugin-copyright-2.0.0-rc.42.tgz#97df8c1009b06185c5b03457f26461b4e0675c54"
+  integrity sha512-YXShOhPiHwsSPe0tIINx+aoc+1kGVDPCZfrjNRweEuTkWyQNd/FIakarasmZiWPHoeMPrOk42Pr8EmIOE2CQkw==
+  dependencies:
+    "@vuepress/helper" "2.0.0-rc.42"
+    "@vueuse/core" "^11.0.1"
+    vue "^3.4.38"
+
+"@vuepress/plugin-feed@^2.0.0-rc.42":
+  version "2.0.0-rc.42"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-feed/-/plugin-feed-2.0.0-rc.42.tgz#127560966c99176730f4be161212585ea631a160"
+  integrity sha512-rcC2CTgxSb1y0WYWnmx4mTrtswuqetkbEmSHOMmR7uqB/G6CQzcejDwYjddEuZnxKGDml+gRM1XLcflDcM2HDA==
+  dependencies:
+    "@vuepress/helper" "2.0.0-rc.42"
+    xml-js "^1.6.11"
+
 "@vuepress/plugin-git@2.0.0-rc.42":
   version "2.0.0-rc.42"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-git/-/plugin-git-2.0.0-rc.42.tgz#bb766554c31c2ac86b8f159bcf52052276e9ea60"
   integrity sha512-Lw3yhfsHmryuyKzNQiSCAmPihN6qU5tdSKvt31TG/T6ubSjn2mzBtH4Fqm0DNntjOJH3eSd6VTtcAPhrx3TXYQ==
   dependencies:
     execa "^9.3.1"
+
+"@vuepress/plugin-google-analytics@^2.0.0-rc.42":
+  version "2.0.0-rc.42"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-google-analytics/-/plugin-google-analytics-2.0.0-rc.42.tgz#2417718c74bbe3c16e05bd80a5925adbe9237daf"
+  integrity sha512-daMpfiGB7g8ot0O2UXEOs77kaBqn4LJYD5aMX9MZBAT3zms100M7Qgu6QylYFSh6f9AnfU1g7zuQkfFaMFjDGw==
 
 "@vuepress/plugin-links-check@2.0.0-rc.42":
   version "2.0.0-rc.42"
@@ -674,7 +705,7 @@
     "@types/markdown-it" "^14.1.2"
     "@vuepress/helper" "2.0.0-rc.42"
 
-"@vuepress/plugin-medium-zoom@2.0.0-rc.42":
+"@vuepress/plugin-medium-zoom@2.0.0-rc.42", "@vuepress/plugin-medium-zoom@^2.0.0-rc.42":
   version "2.0.0-rc.42"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-2.0.0-rc.42.tgz#d4a8f4f6e89aa43e0c135e35f903b55ae4adc04a"
   integrity sha512-zHgnB1tQUv3/semdYuqT2YnXWzlryDRqz8XDl0CsZVbN5m3oIy24yVQcAs7HPfK/PPGzg+CpzlUCrberuN7mVg==
@@ -1844,6 +1875,13 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
+
+xml-js@^1.6.11:
+  version "1.6.11"
+  resolved "https://registry.yarnpkg.com/xml-js/-/xml-js-1.6.11.tgz#927d2f6947f7f1c19a316dd8eea3614e8b18f8e9"
+  integrity sha512-7rVi2KMfwfWFl+GpPg6m80IVMWXLRjO+PxTq7V2CDhoGak0wzYzFgUY2m4XJ47OGdXd8eLE8EmwfAmdjw7lC1g==
+  dependencies:
+    sax "^1.2.4"
 
 yoctocolors@^2.0.0:
   version "2.1.1"
