@@ -4,12 +4,18 @@ on:
   # trigger deployment on every push to main branch
   push:
     branches: [main]
+  pull_request:
+    branches: [ "main" ]    
   # trigger deployment manually
   workflow_dispatch:
 
 jobs:
   docs:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
 
     steps:
       - uses: actions/checkout@v4
@@ -29,7 +35,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           # choose node.js version to use
-          node-version: 20
+          node-version: ${{ matrix.node-version }}
           # cache deps for pnpm
           cache: pnpm
 
