@@ -5,4 +5,5 @@ stuff related to art and drawing.
 
 The site is generated via GitHub Pages and [VuePress].
 
+
 [VuePress]: https://vuepress.vuejs.org/
