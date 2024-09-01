@@ -9,11 +9,11 @@ on:
   # trigger deployment manually
   workflow_dispatch:
 
-runs:
-  using: 'node20'
-
 jobs:
   docs:
+    runs:
+      using: 'node20'
+
     runs-on: ubuntu-latest
 
     steps:
