@@ -23,5 +23,8 @@
     "docs:dev": "vuepress dev docs",
     "docs:serve": "vuepress dev docs",
     "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vue": "^3.4.38"
   }
 }
