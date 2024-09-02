@@ -33,3 +33,13 @@
 
     --vp-c-border: rgb(103, 99, 111);
 }
+
+::-moz-selection {
+    color: var(--vp-c-accent-text);
+    background: var(--vp-c-accent);
+}
+  
+::selection {
+    color: var(--vp-c-accent-text);
+    background: var(--vp-c-accent);
+}
