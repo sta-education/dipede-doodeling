@@ -11,6 +11,11 @@ import copyrightPlugin from './config/plugins/copyright'
 import zoomPlugin from './config/plugins/medium-zoom'
 import photoSwipePlugin from './config/plugins/photo-swipe'
 
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
+import tailwindcssConfig from './../tailwind.config'
+
+
 export default defineUserConfig({
   bundler: viteBundler(),
   theme: defaultTheme(defaultThemeConfig),
@@ -38,4 +43,17 @@ export default defineUserConfig({
     zoomPlugin,
     photoSwipePlugin
   ],
+
+  bundler: viteBundler({
+    viteOptions: {
+        css: {
+            postcss: {
+                plugins: [
+                    autoprefixer(),
+                    tailwindcss(tailwindcssConfig)
+                ]
+            }
+        }
+    }
+    })
 });

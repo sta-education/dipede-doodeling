@@ -18,6 +18,9 @@
     "@vuepress/plugin-medium-zoom": "^2.0.0-rc.42",
     "@vuepress/plugin-photo-swipe": "^2.0.0-rc.42",
     "@vuepress/theme-default": "^2.0.0-rc.42",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.10",
     "vuepress": "^2.0.0-rc.15"
   },
   "scripts": {
