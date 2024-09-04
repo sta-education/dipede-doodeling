@@ -30,6 +30,7 @@ export default defineUserConfig({
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap' }],
     ['script', { src: 'https://www.googletagmanager.com/gtag/js?id=G-XKG3VMSFFF', async: true }],
     ['script', { src: '/js/ga.js'}],
+    ['script', { src: '/js/tailwind.js'}],
     ['script', { src: '/fontawesome-5/js/fontawesome.min.js', defer: true }],
     ['script', { src: '/fontawesome-5/js/light.min.js', defer: true }],
   ],
