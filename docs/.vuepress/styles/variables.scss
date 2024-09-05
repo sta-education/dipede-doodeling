@@ -1,0 +1,31 @@
+:root {
+    --font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', roboto, oxygen,
+    ubuntu, cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+    --vp-c-accent: #DB1675;
+    --vp-c-accent-hover: #8C034E;
+    --vp-c-accent-text: var(--vp-c-white);
+
+    --vp-c-text: rgb(24, 39, 47);
+    --vp-c-text-mute: rgb(24 39 47 / 78%);
+    --vp-c-text-subtle: rgb(24 39 47 / 56%);
+
+    --sta-border-radius: 0.5rem;
+}
+
+[data-theme="dark"] {
+    --vp-c-accent: #DB3F16;
+    --vp-c-accent-hover: #962d13;
+    --vp-c-accent-text: rgb(213, 213, 213);
+
+    // background colors
+    --vp-c-bg: #211D1D;
+    --vp-c-bg-alt: #383838;
+    --vp-c-bg-elv: #000;
+
+    --vp-c-text: rgb(192, 190, 190);
+    --vp-c-text-mute: rgb(192 190 190 / 78%);
+    --vp-c-text-subtle: rgb(192 190 190 / 56%);
+
+    --vp-c-border: #565151;
+}
